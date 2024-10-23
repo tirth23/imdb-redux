@@ -132,3 +132,9 @@ npm install @reduxjs/toolkit react-redux
 > https://redux.js.org/assets/images/ReduxDataFlowDiagram-49fa8c3968371d9ef6f2a1486bd40a26.gif
 > https://redux.js.org/assets/images/ReduxAsyncDataFlowDiagram-d97ff38a0f4da0f327163170ccc13e80.gif
 
+## Deploy to Netlify
+### Once it is deployed, if we route https://imdb-redux.netlify.app/watchlist, it provides error since that route is not registered with netlify. This is because when we access any route on our local machine, React Router handles the routing. But when we deploy the application on any server, directly accessing the route will send the request to the server itself (Netlify in our case). But as there is no /add route handler on the server-side, you will see a page not found error.
+### Netlify provides a way to fix this Create a new file with the name _redirects inside the public folder of our project and add the following contents inside it: /* /index.html 200
+### we're telling Netlify to redirect all the routes to the index.html file. 
+### The index.html file contains our entire React app code. It gets generated inside the build folder when the yarn build command is executed by Netlify while deploying the app. And as routing is handled by our React app which is contained in the index.html file, our application will work without a page not found issue
+
