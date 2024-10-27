@@ -9,7 +9,7 @@ import UserRedux from "./UserRedux";
 
 function Home() {
 
-  console.log(import.meta.env.local.VITE_API_READ_ACCESS_TOKEN);
+  console.log(import.meta.env.VITE_API_KEY);
 
 	return (
 		<div>
