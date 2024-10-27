@@ -9,8 +9,6 @@ import UserRedux from "./UserRedux";
 
 function Home() {
 
-  console.log(import.meta.env.VITE_API_KEY);
-
 	return (
 		<div>
 			<Banner />
