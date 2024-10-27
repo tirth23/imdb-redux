@@ -8,7 +8,9 @@ const Banner = () => {
 	useEffect(() => {
 		axios
 			.get(
-				"https://api.themoviedb.org/3/trending/movie/day?api_key=795a170375bd0d0eea11dcb26e4d1813&language=en-US&page=1"
+				`https://api.themoviedb.org/3/trending/movie/day?api_key=${
+					import.meta.env.VITE_API_KEY
+				}&language=en-US&page=1`
 			)
 			.then((response) => {
 				console.log("Films", response.data);

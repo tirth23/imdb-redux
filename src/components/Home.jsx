@@ -8,6 +8,9 @@ import User from "./User";
 import UserRedux from "./UserRedux";
 
 function Home() {
+
+  console.log(import.meta.env.local.VITE_API_READ_ACCESS_TOKEN);
+
 	return (
 		<div>
 			<Banner />
