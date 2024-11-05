@@ -8,21 +8,19 @@ import User from "./User";
 import UserRedux from "./UserRedux";
 
 function Home() {
-
 	return (
 		<div>
 			<Banner />
-			<Movies/>
-      {/* can also wrap individual components */}
-      {/* <WatchListContextWrapper>
+			<Movies />
+			{/* can also wrap individual components */}
+			{/* <WatchListContextWrapper>
         <Movies/>
       </WatchListContextWrapper> */}
 
 			{/* <Counter /> */}
 			{/* <TodoRedux /> */}
-      {/* <User /> */}
-      {/* <UserRedux /> */}
-
+			{/* <User /> */}
+			{/* <UserRedux /> */}
 		</div>
 	);
 }

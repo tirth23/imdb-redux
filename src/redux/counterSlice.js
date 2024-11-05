@@ -9,7 +9,9 @@ const counterSlice = createSlice({
 
 	/* This is an object that contains reducer functions. Reducers define how the state should change in response to actions */
 	reducers: {
-		/* This is a reducer function that increases the value in the state by 1 */
+		/* This is a action creator reducer function that increases the value in the state by 1 
+    When you call these functions, they return action objects that can be dispatched to the Redux store
+    */
 		increment(state) {
 			state.value += 1; // Immer.js
 		},
