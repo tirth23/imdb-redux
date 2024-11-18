@@ -125,7 +125,7 @@ npm run dev
 
 ## Main Parts of Redux Toolkit
 
-1. Slices: A slice is like a part of your application's state. It contains the state, actions, and reducers for a specific part of your application. Think of a slice as a "slice of the pie" where each slice represents a piece of your overall state.
+1. Slices: A slice is like a part of your application's state. It contains the state, actions, and reducers for a specific part of your application. Think of a slice as a "slice of the pie" where each slice represents a piece of your overall state. Collection of reducer function, action for a single feature of app
 2. Actions: Actions are objects that describe what happened in your app. For example, clicking a button might generate an action like { type: 'counter/increment' }. Actions tell Redux what to do but don’t do the work themselves.
 3. Reducers: Reducers are functions that take the current state and an action, and return a new state. They handle the actual state updates based on the action received. Think of reducers as the part of the app that knows how to do the work when an action says what happened.
 4. Store: The store is the place where your app's state lives. It brings together the actions and reducers to manage the state. The store is like the central command center for your app’s state.
